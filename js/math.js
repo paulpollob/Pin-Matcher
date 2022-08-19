@@ -23,12 +23,15 @@ document.getElementById('keypad').addEventListener('click', function(event){
         if(display.value === document.getElementById('showPin').value)
         {
             alert("Hori ball you are successfull");
+            document.getElementById("successfull").style.display = "block";
+            document.getElementById("unsuccessfull").style.display = "none";
         }
         else
         {
             alert("Hare Krishna try again.best of luck");
             chance.innerText = chance.innerText-1;
-            
+            document.getElementById("unsuccessfull").style.display = "block";
+            document.getElementById("successfull").style.display = "none";
         }
     }
     
